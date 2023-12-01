@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    list-style-type: none
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.yellow{
+    background-color: #FFDC40;
+    width: content;
+    height: 35px;
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.todo{
+    overflow: hidden;
+    border-radius: 5px;
+    border: 0.1px solid grey;
+    width: 340px;
+    height: max-content;
+}
+
+.filter{
+margin-top: 30px;
+margin-left: 285px;
+border: none;
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+
+input{
+    cursor: pointer;
+    display: block;
+    border: 0.1px solid grey;
+    margin-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#add_button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 42px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: none;
+    margin-left: 105px;
+    margin-top: 30px;
+   margin-bottom: 10px;
+    color: white;
+}
+#add_button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 84, 227);
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+}
+
+.list_container{
+    margin-left: 30px;
+}
+ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+ ul li span {
+     border: 1px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     right: 30px;
+     top: -1000px;
+     margin-right: 10px;
+     /* width: 40px;
+     height: 40px; */
+     font-size: 28px;
+     color: #555;
+     line-height: 40px;
+     text-align: center;
+     border-radius: 50%;
+ }
+
+#add_button span:hover{
+width: 130px;
+transition: all 1s;
+ border-radius: 20px;
+ }
+
+  ul li.checked {
+      color: #555;
+      text-decoration: line-through;
+  }
+
+  ul li.checked::before {
+      background-image: url(../images/images.png);
+  }
+
+ ul li span:hover {
+     background:rgb(158, 84, 227);
+     color: white;
+     border: none;
+     transition: all 0.5s;
+     
+     
+ }
+
+
+  ul li span {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      color: #555;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+  }
+
+
+
